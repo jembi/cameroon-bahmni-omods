@@ -11,10 +11,10 @@ addons:
   - cmr-staging.jembi.org
 deploy:
 - provider: script
-  script: ssh bahmni@cmr-dev.jembi.org 'cd ~/git/cameroon-bahmni-omods;git pull;service openmrs restart;'
+  script: ssh bahmni@cmr-dev.jembi.org 'cd ~/git/cameroon-bahmni-omods;git pull;/sbin/service openmrs restart;;'
   on:
     branch: dev
 - provider: script
-  script: ssh bahmni@cmr-staging.jembi.org 'cd ~/git/cameroon-bahmni-omods;git pull;service openmrs restart;'
+  script: ssh bahmni@cmr-staging.jembi.org 'cd ~/git/cameroon-bahmni-omods;git pull;/sbin/service openmrs restart;'
   on:
     branch: staging
