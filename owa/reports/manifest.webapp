@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "name": "OpenMRS Reports ",
+  "description": "OWA for OpenMRS Reporting Module ",
+  "launch_path": "index.html",
+  "icons": {
+    "48": "omrs-button.png"
+  },
+  "developer": {
+    "name": "binduak",
+    "url": "https://github.com/binduak/openmrs-owa-reporting"
+  },
+  "default_locale": "en",
+  "activities": {
+    "openmrs": {
+      "href": "*"
+    }
+  }
+}
